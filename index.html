@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama, bye!</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon1.png" />
+    <!--Blocks, sections-->
+    <link href="./css/blocks/header.css" rel="stylesheet" />
+    <link href="./css/blocks/body.css" rel="stylesheet" />
+    <link href="./css/blocks/cards.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"> </script>
+    <script src="js/formMail.js"></script>
+    <!-- <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script> -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-logo"><img src="./img/logo.svg"></div>
+                <nav class="header-nav">
+                    <ul>
+                        <li> <a href="index.html"> Головна</a></li>
+                        <li> <a href="about.html"> Про садочок</a></li>
+                        <li> <a href="mail.html"> Послуги</a></li>
+                        <li> <a href="#"> Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-burger">
+                    <img src="./img/burger.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div id="mailform" class="form-call">
+        <form class="div-form" id="popup">
+            <div class="pop-up-body">
+                <h1 class="popup-header">Давайте знайомитися!</h1>
+                <span class="close" id="close">&times;</span>
+                <input type="tel" id="phone" name="phone" placeholder="Номер телефону" class="input-area"><br>
+                <input type="text" id="name" name="name" placeholder="Ім'я" class="input-area"><br>
+                <textarea name="message" id="message" placeholder="Коментар" class="input-area"></textarea><br>
+                <button type="button" id="sendMail" class="callback">
+                    <h4 class="popup-btn">Відправити</h4>
+                </button>
+                <div id="errorMess" class="error"> </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Popup Thank You page -->
+    <div class="js-overlay-thank-you">
+        <div class="div-form">
+            <span class="close" id="js-close-thank-you">&times;</span>
+            <div class="">
+                <h1>Дякуємо за заявку!</h1>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="home">
+            <div class="container">
+
+                <div class="hc-wrapper">
+                    <div class="home-heading-box">
+                        <h1 class="home-heading">В садочок без сліз</h1>
+                    </div>
+
+                    <!-- And its place for mascot Dino ((my love)) -->
+                    <!-- Wrapper -->
+                    <div class="offer-wrapper">
+
+                        <!-- Text and btn (left side block) -->
+                        <div class="left-side-block">
+                            <div class="home-text">
+                                <h1 class="header-mobile">В садочок без сліз </h1>
+                                <p> Приватний арт-садок з авторською програмою адаптації та навчання</p>
+                            </div>
+
+                            <div class="home-btn">
+
+                                <a class="btn" id="myBtn">
+                                    <h6 class="btn-text">Познайомитися ближче</h6>
+                                </a>
+
+                            </div>
+                            <!-- Popup  -->
+
+
+
+                        </div>
+                        <div class="mob-dino">
+                            <img src="./img/dino.png" alt="">
+                        </div>
+
+                        <!-- Card of products desctop version-->
+
+                        <div class="cards">
+
+                            <!-- first one -->
+                            <div class="block-img"><span class="descr">
+                                    <h2 class="text-card-preheader">абонемент на місяць "ол інклюзів"</h2>
+                                    <h1 class="text-card-header">за 10 000 грн</h1>
+                                </span>
+                                <h2 class="text-card">Мама відпочиває цілий день</h2><img src="img/1.png" alt="Alt">
+                            </div>
+
+                            <!-- second one -->
+                            <div class="block-img"><span class="descr">
+                                    <h2 class="text-card-preheader">поденне відвідування</h2>
+                                    <h1 class="text-card-header">за 600 грн</h1>
+                                </span>
+                                <h2 class="text-card">Присвятіть день собі</h2><img src="img/2.png" alt="Alt">
+                            </div>
+
+                            <!-- and another -->
+                            <div class="block-img"><span class="descr">
+                                    <h2 class="text-card-preheader">підготовка до школи та наукові заняття</h2>
+                                    <h1 class="text-card-header">за 5 000 грн</h1>
+                                </span>
+                                <h2 class="text-card">Розкрийте науковий потенціал</h2><img src="img/3.png" alt="Alt">
+                            </div>
+
+                            <!-- and one more -->
+                            <div class="block-img"><span class="descr">
+                                    <h2 class="text-card-preheader">з 8:00 до 14:00 або тричі на тиждень</h2>
+                                    <h1 class="text-card-header">за 6 000 грн</h1>
+                                </span>
+                                <h2 class="text-card">Півдня або пів тижня</h2><img src="img/4.png" alt="Alt">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="masscot-block">
+
+                        <img src="./img/dino.png" alt="" class="masscot">
+
+                        <!-- here's block for rhetorical question-->
+                        <div class="about-block">
+                            <a href="about.html">
+                                <img src="./img/_.png" alt="" class="about-img-q">
+                                <img src="./img/IDEA.png" alt="" class="about-img">
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- Cards of products mobile version -->
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="block-img-mob"><span class="descr">
+                                    <h2 class="text-card-preheader">абонемент на місяць "ол інклюзів"</h2>
+                                    <h1 class="text-card-header">за 10 000 грн</h1>
+                                </span>
+                                <h2 class="text-card">Мама відпочиває цілий день</h2><img src="img/1.png" alt="Alt">
+                            </div>
+                        </div>
+
+                        <!-- second one -->
+                        <div class="swiper-slide">
+                            <div class="block-img-mob"><span class="descr">
+                                    <h2 class="text-card-preheader">поденне відвідування</h2>
+                                    <h1 class="text-card-header">за 600 грн</h1>
+                                </span>
+                                <h2 class="text-card">Присвятіть день собі</h2><img src="img/2.png" alt="Alt">
+                            </div>
+                        </div>
+
+                        <!-- and another -->
+                        <div class="swiper-slide">
+                            <div class="block-img-mob"><span class="descr">
+                                    <h2 class="text-card-preheader">підготовка до школи та наукові заняття</h2>
+                                    <h1 class="text-card-header">за 5 000 грн</h1>
+                                </span>
+                                <h2 class="text-card">Розкрийте науковий потенціал</h2><img src="img/3.png" alt="Alt">
+                            </div>
+                        </div>
+
+                        <!-- and one more -->
+                        <div class="swiper-slide">
+                            <div class="block-img-mob"><span class="descr">
+                                    <h2 class="text-card-preheader">з 8:00 до 14:00 або тричі на тиждень</h2>
+                                    <h1 class="text-card-header">за 6 000 грн</h1>
+                                </span>
+                                <h2 class="text-card">Півдня або пів тижня</h2><img src="img/4.png" alt="Alt">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-btn-left"></div>
+                    <div class="swiper-btn-right"></div>
+                </div>
+
+
+
+            </div>
+
+            <!-- <div class="container">
+                
+            <div class="about-mobile">
+                <img src="./img/IDEA.png" alt="" class="what-is">
+                <img src="./img/q.png" alt="" data-wow-delay="3s" class="quest-mobile wow animate__animated animate__hinge">
+            </div> -->
+
+
+            </div>
+            </div>
+
+        </section>
+
+
+        <section class="about">
+            <div class="container">
+
+                <div class="reasons-mobile">
+                    <div class="about-mobile">
+                        <img src="./img/IDEA.png" alt="" class="what-is">
+                        <div class="anim-wrapper scroll-item">
+                            <img src="./img/q.png" alt="" class="quest-mobile">
+                        </div>
+                    </div>
+
+                    <div class="reason-card scroll-item">
+                        <div class="img-wraper">
+                            <img src="./img/1.png" alt="" class="card-img-page">
+                        </div>
+                        <div class="about-card">
+                            <h1 class="header-text">SOME HEADER TEXT</h1>
+                            <p class="about-card-decription">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Libero tenetur, adipisci necessitatibus ipsam repellendus sequi doloremque
+                                obcaecati neque totam similique esse blanditiis, illum dolore accusantium nulla!
+                                Ratione, libero voluptates. Fugiat.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="reason-card scroll-item">
+                        <div class="img-wraper">
+                            <img src="./img/2.png" alt="" class="card-img-page">
+                        </div>
+                        <div class="about-card">
+                            <h1 class="header-text">SOME HEADER TEXT</h1>
+                            <p class="about-card-decription">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Libero tenetur, adipisci necessitatibus ipsam repellendus sequi doloremque
+                                obcaecati neque totam similique esse blanditiis, illum dolore accusantium nulla!
+                                Ratione, libero voluptates. Fugiat.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="reason-card scroll-item">
+                        <div class="img-wraper">
+                            <img src="./img/3.png" alt="" class="card-img-page">
+                        </div>
+                        <div class="about-card">
+                            <h1 class="header-text">SOME HEADER TEXT</h1>
+                            <p class="about-card-decription">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Libero tenetur, adipisci necessitatibus ipsam repellendus sequi doloremque
+                                obcaecati neque totam similique esse blanditiis, illum dolore accusantium nulla!
+                                Ratione, libero voluptates. Fugiat.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="reason-card scroll-item">
+                        <div class="img-wraper">
+                            <img src="./img/4.png" alt="" class="card-img-page">
+                        </div>
+                        <div class="about-card">
+                            <h1 class="header-text">SOME HEADER TEXT</h1>
+                            <p class="about-card-decription">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Libero tenetur, adipisci necessitatibus ipsam repellendus sequi doloremque
+                                obcaecati neque totam similique esse blanditiis, illum dolore accusantium nulla!
+                                Ratione, libero voluptates. Fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+
+                <div class="content">
+                    <h4 class="header-mobile-2">ЗАЙТИ В ГОСТІ:</h4>
+                    <div id="map" class="map scroll-item">
+                        <script
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_08lybkcB0lkWbOiXmhELX97BCxwfzg&callback=initMap&v=weekly"
+                            defer>
+                            </script>
+                    </div>
+                    <div class="phone-container-mob scroll-item">
+
+                        <div class="header-wrapper">
+                            <h4 class="header-mobile-2">ЗАТЕЛЕФОНУВАТИ:</h4>
+                        </div>
+                        <div class="sec-wrapper">
+                            <a href="tel:+380667732231" class="phone">
+                                <h1> +38 066 77 32 23 1</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="phone-container-mob scroll-item">
+
+                        <div class="header-wrapper">
+                            <h4 class="header-mobile-2">НАПИСАТИ:</h4>
+                        </div>
+                        <div class="sec-wrapper">
+                            <img src="./img/telegram.png" class="icon">
+                            <a href="t.me/mamabye">
+                            <h1> @mamabye</h1>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <script>
+        var swiper = new Swiper(".swiper", {
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-btn-right",
+                prevEl: ".swiper-btn-left",
+            },
+            pagination: {
+                el: ".swiper-pagination"
+            },
+            mousewhell: true,
+            keyboard: true,
+        });
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/formMail.js"></script>
+
+    <script>
+        let popup = document.getElementById('mailform'),
+            popupToggle = document.getElementById('myBtn'),
+            popupClose = document.querySelector('.close');
+        outside = document.getElementById('popup')
+
+        popupToggle.onclick = function () {
+            // popup.style.display = "flex";
+            popup.classList.add('active');
+        }
+        popupClose.onclick = function () {
+            popup.classList.remove('active');
+        }
+
+        window.onclick = function (e) {
+            if (e.target == outside) {
+                popup.classList.remove('active');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
